@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Innser</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"> 
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+  </head>
+  <body>
+  <?php include("registrar.php")  ?>
+    <nav class="navbar">
+      <div class="navbar-overlay" onclick="toggleMenuOpen()">
+      </div>
+
+      <button type="button" class="navbar-burger" onclick="toggleMenuOpen()">
+        <span class="material-icons button_naranja">menu</span>
+      </button>
+     
+      <a href="index.php"><img class="logo_portada-empresa" src="Imagenes/WEB_INNSER/01.INICIO/LOGO-RENOVADO-INNSER-.png_2.png" height="90px"></a>
+      <nav class="navbar-menu">
+        <button onclick="location.href='index.php'" type="button" class="active">Inicio</button>
+        <button onclick="location.href='index.php#cursos'" type="button" class="active">Cursos</button>
+        <button onclick="location.href='empresa.php'" type="button" class="active">Empresa</button>
+        <button onclick="location.href='servicios.php'" type="button" class="active">Servicios</button>
+        <button onclick="location.href='responsablidad_social.php'" type="button" class="active">Responsabilidad Social</button>
+        <button onclick="location.href='nosotros.php'" type="button" class="active">Nosotros</button>
+      </nav>
+    </nav>
+
+
+    <button class="btn-abrir-popup1" id="btn-abrir-popup">Contáctanos</button>
+    <div class="overlay" id="overlay">
+      <div class="popup" id="popup">
+        <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+        <h3>Formulario de contacto</h3>
+        <h4>Innova y potencia a tu equipo</h4>
+        <form action="" class="formulario" id="formulario">
+		
+          <!-- Grupo: Nombre -->
+          <div class="formulario__grupo" id="grupo__nombre">
+            <label for="nombre" class="formulario__label">Nombre</label>
+            <div class="formulario__grupo-input">
+              <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="">
+              <i class="formulario__validacion-estado fas fa-times-circle"></i>
+            </div>
+            <p class="formulario__input-error">El nombre solo puede contener letras, espacios y pueden llevar acento</p>
+          </div>
+    
+          <!-- Grupo: Usuario -->
+          <div class="formulario__grupo" id="grupo__usuario">
+            <label for="usuario" class="formulario__label">Nombre de la empresa</label>
+            <div class="formulario__grupo-input">
+              <input type="text" class="formulario__input" name="usuario" id="usuario" placeholder="">
+              <i class="formulario__validacion-estado fas fa-times-circle"></i>
+            </div>
+            <p class="formulario__input-error">Debe rellenar el campo y solo puede contener numeros, letras y guion bajo.</p>
+          </div>
+    
+          <!-- Grupo: Cargo -->
+          <div class="formulario__grupo" id="grupo__cargo">
+            <label for="cargo" class="formulario__label">Cargo actual</label>
+            <div class="formulario__grupo-input">
+              <input type="text" class="formulario__input" name="cargo" id="cargo" placeholder="">
+              <i class="formulario__validacion-estado fas fa-times-circle"></i>
+            </div>
+            <p class="formulario__input-error">Debe rellenar el campo y solo puede contener numeros, letras y guion bajo.</p>
+          </div>
+    
+          <!-- Grupo: Numero de empleados -->
+          <div class="formulario__grupo" id="grupo__empleados">
+            <label for="empleados" class="formulario__label">Número de empleados</label>
+            <div class="formulario__grupo-input">
+              <input type="text" class="formulario__input" name="empleados" id="empleados" placeholder="">
+              <i class="formulario__validacion-estado fas fa-times-circle"></i>
+            </div>
+            <p class="formulario__input-error">Debe rellenar el campo y solo puede contener numeros.</p>
+          </div>
+    
+          <!-- 
+            
+          <div class="formulario__grupo" id="grupo__password">
+            <label for="password" class="formulario__label">Contraseña</label>
+            <div class="formulario__grupo-input">
+              <input type="password" class="formulario__input" name="password" id="password">
+              <i class="formulario__validacion-estado fas fa-times-circle"></i>
+            </div>
+            <p class="formulario__input-error">La contraseña tiene que ser de 4 a 12 dígitos.</p>
+          </div>
+    
+        
+          <div class="formulario__grupo" id="grupo__password2">
+            <label for="password2" class="formulario__label">Repetir Contraseña</label>
+            <div class="formulario__grupo-input">
+              <input type="password" class="formulario__input" name="password2" id="password2">
+              <i class="formulario__validacion-estado fas fa-times-circle"></i>
+            </div>
+            <p class="formulario__input-error">Ambas contraseñas deben ser iguales.</p>
+          </div>
+    
+          -->	
+    
+          <!-- Grupo: Correo Electronico -->
+          <div class="formulario__grupo" id="grupo__correo">
+            <label for="correo" class="formulario__label">Correo Electrónico</label>
+            <div class="formulario__grupo-input">
+              <input type="email" class="formulario__input" name="correo" id="correo" placeholder="correo@correo.com">
+              <i class="formulario__validacion-estado fas fa-times-circle"></i>
+            </div>
+            <p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
+          </div>
+    
+          <!-- Grupo: Teléfono -->
+          <div class="formulario__grupo" id="grupo__telefono">
+            <label for="telefono" class="formulario__label">Teléfono</label>
+            <div class="formulario__grupo-input">
+              <input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="">
+              <i class="formulario__validacion-estado fas fa-times-circle"></i>
+            </div>
+            <p class="formulario__input-error">El telefono solo puede contener numeros y el maximo son 14 dígitos.</p>
+          </div>
+    
+    
+          <!-- Grupo: Terminos y Condiciones -->
+          <div class="formulario__grupo" id="grupo__terminos">
+            <label class="formulario__label">
+              <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+              Acepto los Términos y Condiciones
+            </label>
+          </div>
+    
+          <div class="formulario__mensaje" id="formulario__mensaje">
+            <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente. </p>
+          </div>
+    
+          <div class="formulario__grupo formulario__grupo-btn-enviar">
+            <button type="submit" class="formulario__btn">Enviar</button>
+            <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
+          </div>
+        </form>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="panel" data-aos="fade-left">
+      <div class="informacion" data-aos="fade-up-right">
+      <h1>Entrena a tu equipo para acelerar la innovación y transformación digital</h1>
+        <p>Programa de entrenamiento corporativo en habilidades de innovación para acelerar y transformar tu empresa en el mercado digital.</p>
+      </div>
+  </div>
+
+  <div class="metodlogia-empresas-total">
+<div class="metodologia-empresas" >
+  <div class="metodologia-empresas-content">
+
+  <div class="metodologia-empresas-title" >
+    <h1>Nuestra metodología</h1>
+  </div>
+  <div class="metodologia-empresas-title1" data-aos="flip-left">
+    <p>Aula Invertida</p>
+  </div>
+  <div class="metodologia-empresas-title2" data-aos="flip-left" >
+    <p>Enfoque "Aprender haciendo"</p>
+  </div>
+  <div class="metodologia-empresas-title3" data-aos="flip-left" >
+    <p>Aprendizaje entre pares</p>
+  </div>
+  <div class="metodologia-empresas-title4" data-aos="flip-left">
+    <p>Gamificacion</p>
+  </div>
+
+  <div class="metodologia-empresas-numero1" data-aos="flip-left">
+    <p>01</p>
+  </div>
+  <div class="metodologia-empresas-numero2" data-aos="flip-left" >
+    <p>02</p>
+  </div>
+  <div class="metodologia-empresas-numero3" data-aos="flip-left">
+    <p>03</p>
+  </div>
+  <div class="metodologia-empresas-numero4" data-aos="flip-left">
+    <p>04</p>
+  </div>
+  <div class="metodologia-empresa-imagen1" data-aos="flip-left">
+    <img src="Imagenes/WEB_INNSER/03.EMPRESAS/Metodologia/controlador-de-videojuegos.png" width="80Vw">
+  </div>
+  <div class="metodologia-empresa-imagen2" data-aos="flip-left">
+    <img src="Imagenes/WEB_INNSER/03.EMPRESAS/Metodologia/icono-al-revés-estilo-simple-115585415_preview_rev_1.png" width="100px">
+  </div>
+  <div class="metodologia-empresa-imagen3" data-aos="flip-left">
+    <img src="Imagenes/WEB_INNSER/03.EMPRESAS/Metodologia/lanzamiento-del-proyecto.png" width="80px">
+  </div>
+  <div class="metodologia-empresa-imagen4" data-aos="flip-left">
+    <img src="Imagenes/WEB_INNSER/03.EMPRESAS/Metodologia/study-group-icon-vector_preview_rev_1.png" width="130px">
+  </div>
+
+  <div class="metodologia-empresa-imagen">
+    <img src="Imagenes/WEB_INNSER/03.EMPRESAS/Metodologia/Recurso_56.png" width="150px">
+  </div>
+  </div>
+</div>
+</div>
+
+
+<div class="nuestro-impacto-empresas-contenedor" data-aos="zoom-out">
+  <div class="nuestro-impacto-empresas-contenedor-titulo">
+    <div class="nuestro-impacto-empresa-titulo">
+      <h1>Nuestro impacto</h1>
+    </div>
+    <div class="impacto-empresa-logo">
+      <img src="" width="100px">
+    </div>
+  </div>
+  <div class="contenedor-descripcion-empresa">
+    <div class="nuestro-impacto-empresa-descripcion">
+      <h3>Colaboramos con los Objetivos de desarrollo sostenible de la organizacion de las naciones unidas</h3>
+    </div>
+  </div>
+
+<br><br><br>
+
+  <div class="impacto-empresas-contenedor-card">
+    <div class="impacto-card-empresas">
+      <div class="impacto-img-card-empresas">
+        <img src="Imagenes/WEB_INNSER/03.EMPRESAS/S_SDG-goals_icons-individual-rgb-04.png" width="150px">
+      </div>
+      <div class="impacto-content-empresas">
+        <div class="div-content-title-empresas">
+            <div  class="impacto-title-empresas" id="numero1">
+            <h3>+1000</h3>
+          </div>
+          
+        </div>
+        
+        <div class="impacto-text-empresas">
+          <p>Jovenes entrenados para innovar</p>
+        </div>
+      </div>
+    </div>
+    <div class="impacto-card-empresas">
+      <div class="impacto-img-card-empresas">
+        <img src="Imagenes/WEB_INNSER/03.EMPRESAS/descarga (13).png" width="150px">
+      </div>
+      <div class="impacto-content-empresas">
+        <div class="impacto-title-empresas" id="numero2">
+          <h3>+400</h3>
+        </div>
+        <div class="impacto-text-empresas">
+          <p>Mujeres empoderadas por la innovación</p>
+        </div>
+      </div>
+    </div>
+    <div class="impacto-card-empresas">
+      <div class="impacto-img-card-empresas">
+        <img src="Imagenes/WEB_INNSER/03.EMPRESAS/descarga (14).png" width="150px">
+      </div>
+      <div class="impacto-content-empresas">
+        <div class="impacto-title-empresas" id="numero3">
+          <h3>+200</h3>
+        </div>
+        <div class="impacto-text-empresas">
+          <p>Emprendimientos para crear empleo</p>
+        </div>
+      </div>
+    </div>
+    <div class="impacto-card-empresas">
+      <div class="impacto-img-card-empresas">
+        <img src="Imagenes/WEB_INNSER/03.EMPRESAS/S_SDG-goals_icons-individual-rgb-09 (1).png" width="150px">
+      </div>
+      <div class="impacto-content-empresas">
+        <div class="impacto-title-empresas" id="numero4">
+          <h3>+20</h3>
+        </div>
+        <div class="impacto-text-empresas">
+          <p>Innovaciones para crear valor</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<div class="fortaleza-total" >
+<div class="fortlezas-empresas" data-aos="zoom-in">
+  <div class="fortalezas-empresas-content">
+    <div class="fortalezas-empresas-title">
+      <h1>Nuestras fortalezas</h1>
+    </div>
+    <div class="empresa-imagen1">
+      <img src="Imagenes/WEB_INNSER/03.EMPRESAS/Fortalezas/Recurso 5.png" width="100px">
+      <div class="fortalezas-empresas-texto">
+        <p>+3 Años de trayectoria</p>
+      </div>
+    </div>
+    <div class="pelotita-empresas">
+
+    </div>
+  
+    <div class="empresa-imagen2">
+      <img src="Imagenes/WEB_INNSER/03.EMPRESAS/Fortalezas/Recurso 4.png" width="100px">
+      <div class="fortalezas-empresas-texto">
+        <p>+1200 personas capacitadas</p>
+      </div>
+    </div>
+    <div class="empresa-imagen3">
+      <img src="Imagenes/WEB_INNSER/03.EMPRESAS/Fortalezas/Recurso 6.png" width="100px">
+      <div class="fortalezas-empresas-texto">
+        <p>+10 clientes acompañados en el ultimo año</p>
+      </div>    
+    </div>
+    <div class="empresa-imagen4">
+      <img src="Imagenes/WEB_INNSER/03.EMPRESAS/Fortalezas/Recurso 7.png" width="100px">
+      <div class="fortalezas-empresas-texto">
+        <p>+4 paises atendidos en Lationamerica</p>
+      </div>
+    </div>
+    <div class="empresa-imagen5">
+      <img src="Imagenes/WEB_INNSER/03.EMPRESAS/Fortalezas/Recurso 8.png" width="100px">
+      <div class="fortalezas-empresas-texto">
+        <p>+15 colaboradores con alto nivel profesional y ético</p>
+      </div>
+    </div>
+  </div>
+    <div class="fortalezas-empresas-img">
+    </div>
+</div>
+</div>
+
+
+<div class="contenedor-empresas-instituciones"  data-aos="zoom-in">
+    <div class="titulo-card-empresas"> 
+      <div class="titulo-empresas-aprendizaje">
+        <h2>Empresas e instituciones que confian en nosotros</h2> 
+      </div>
+      <div class="barrita-empresas-aprendizaje">
+        <div class="progreso2" style=" --w:100%"></div>
+      </div>
+    </div>
+      <div class="contenedor-empresas-instituciones-imagenes">
+          <div class="imagenes-instituciones">
+            <img src="Imagenes/WEB_INNSER/03.EMPRESAS/LOGO/Recurso 6.png" width="80px" height="80px">
+          </div>
+          <div class="imagenes-instituciones">
+            <img src="Imagenes/WEB_INNSER/03.EMPRESAS/LOGO/Recurso 7.png" width="80px" height="80px">
+          </div>
+          <div class="imagenes-instituciones">
+            <img src="Imagenes/WEB_INNSER/03.EMPRESAS/LOGO/Recurso 8.png" width="80px" height="80px">
+          </div>
+          <div class="imagenes-instituciones">
+            <img src="Imagenes/WEB_INNSER/03.EMPRESAS/LOGO/Recurso 9.png" width="80px" height="80px">
+          </div>
+          <div class="imagenes-instituciones">
+            <img src="Imagenes/WEB_INNSER/03.EMPRESAS/LOGO/Recurso 10.png" width="80px" height="80px">
+          </div>
+          <div class="imagenes-instituciones">
+            <img src="Imagenes/WEB_INNSER/03.EMPRESAS/LOGO/Recurso 11.png" width="80px" height="80px">
+          </div>
+          <div class="imagenes-instituciones">
+            <img src="Imagenes/WEB_INNSER/03.EMPRESAS/LOGO/Recurso 12.png" width="80px" height="80px">
+          </div>
+          <div class="imagenes-instituciones">
+            <img src="Imagenes/WEB_INNSER/03.EMPRESAS/LOGO/Recurso 13.png" width="80px" height="80px">
+          </div>
+          <div class="imagenes-instituciones">
+            <img src="Imagenes/WEB_INNSER/03.EMPRESAS/LOGO/Recurso 14.png" width="80px" height="80px">
+          </div>
+          <div class="imagenes-instituciones">
+            <img src="Imagenes/WEB_INNSER/03.EMPRESAS/LOGO/Recurso 15.png" width="80px" height="80px">
+          </div>
+          <div class="imagenes-instituciones">
+            <img src="Imagenes/WEB_INNSER/03.EMPRESAS/LOGO/Recurso 16.png" width="80px" height="80px">
+          </div>
+          <div class="imagenes-instituciones">
+            <img src="Imagenes/WEB_INNSER/03.EMPRESAS/LOGO/Recurso 17.png" width="80px" height="80px">
+          </div>
+          <div class="imagenes-instituciones">
+            <img src="Imagenes/WEB_INNSER/03.EMPRESAS/LOGO/Recurso 18.png" width="80px" height="80px">
+          </div>
+          <div class="imagenes-instituciones">
+            <img src="Imagenes/WEB_INNSER/03.EMPRESAS/LOGO/Recurso 19.png" width="80px" height="80px">
+          </div>
+          <div class="imagenes-instituciones">
+            <img src="Imagenes/WEB_INNSER/03.EMPRESAS/LOGO/Recurso 20.png" width="80px" height="80px">
+          </div>
+          <div class="imagenes-instituciones">
+            <img src="Imagenes/WEB_INNSER/03.EMPRESAS/LOGO/Recurso 21.png" width="80px" height="80px">
+          </div>
+      </div>
+      <div class="empresas-instituciones-mensaje">
+        <h1>Desarrollamos programas de entrenamiento corporativo flexibles e interactivos para que tu empresa logre resultados de negocios en el mercado digital</h1>
+      </div>
+      <br><br><br><br>
+  </div>
+    
+
+  <div class="contenedor-empresas">
+    <br><br>
+    <div class="titulo-card-empresas"> 
+        <div class="barrita-empresas-aprendizaje">
+          <div class="progreso" style=" --w:100%"></div>
+        </div>
+        <div class="titulo-empresas-aprendizaje">
+          <h2>Experiencia de aprendizaje única</h2> 
+        </div>
+    </div>
+    <div class="contenedor-card-empresas"> 
+      <div class="card-empresas" data-aos="flip-left">
+        <div class="img-card-empresas">
+          <br>
+          <img src="Imagenes/WEB_INNSER/03.EMPRESAS/Recurso 15.png" width="100px">
+        </div>
+        <div class="content-empresas">
+          <div class="title-empresas">
+            <h3>Instructores selectos</h3>
+          </div>
+          <div class="text-empresas">
+            <p>Desarrollado por expertos que trabajan en empresas digitales innovadoras locales e internacionales</p>
+          </div>
+        </div>
+      </div>
+      <div class="card-empresas" data-aos="flip-right">
+        <div class="img-card-empresas">
+          <br>
+          <img src="Imagenes/WEB_INNSER/03.EMPRESAS/Recurso 16.png" width="100px">
+        </div>
+        <div class="content-empresas">
+          <div class="title-empresas">
+            <h3>Entrenamiento inmersivo</h3>
+          </div>
+          <div class="text-empresas">
+            <p>Combina aprendizaje a tu propio ritmo online con sesiones en vivo.No somos un curso online masivo</p>
+          </div>
+        </div>
+      </div>
+      <div class="card-empresas" data-aos="flip-left"> 
+        <div class="img-card-empresas">
+          <br>
+          <img src="Imagenes/WEB_INNSER/03.EMPRESAS/Recurso 17.png" width="100px">
+        </div>
+        <div class="content-empresas">
+          <div class="title-empresas">
+            <h3>Contenido práctico</h3>
+          </div>
+          <div class="text-empresas">
+            <p>Todos nuestros programas involucran el desarrollo de proyecto para aplicar lo aprendido</p>
+          </div>
+        </div>
+      </div>      
+    </div> 
+  </div>
+
+
+
+
+
+<div class="footer-pagina2">
+  <div class="footer1">
+    <div class="footer1-1">
+    <a href="index.html"><img src="Imagenes/WEB_INNSER/01.INICIO/LOGO-RENOVADO-INNSER-.png_2.png" width="200px"></a>
+    </div>
+    <div class="footer1-2">
+      <br><br>
+    <p>® Innser 2023</p>
+    </div>
+  </div>
+  <div class="footer2">
+    <div class="footer2-1">
+      <h1>Socios Globales:</h1>
+    </div>
+    <div class="footer2-2">
+    <a href="https://tsunagaru-edutech.com/" target="_blank"><img src="Imagenes/WEB_INNSER/Footer/Recurso28.png" width="70px"></a>
+    <a href="https://fractalup.com/" target="_blank"><img src="Imagenes/WEB_INNSER/Footer/Recurso29.png" width="70px"></a>
+    <a href="https://certiprof.com/" target="_blank"><img src="Imagenes/WEB_INNSER/Footer/Recurso30.png" width="65px"></a>
+    </div>
+  </div>
+  <div class="footer3">
+    <div class="footer3-1">
+      <h1>Contenido</h1>
+    </div>
+    <div class="footer3-2">
+      <a href="index.php">Inicio</a>
+      <a href="index.php">Cursos</a>
+      <a href="empresa.php">Empresa</a>
+      <a href="nosotros.php">Nosotros</a>
+    </div>
+  </div>
+  <div class="footer4">
+    <div class="footer4-1">
+      <h1>Contacto:</h1>
+    </div>
+    <div class="footer4-2">
+      <a href="https://www.facebook.com/InnserAcademy" target="_blank"><img src="Imagenes/WEB_INNSER/01.INICIO/fb.png" width="30px"></a>
+      <a href="https://www.linkedin.com/company/innserpe/" target="_blank"><img src="Imagenes/WEB_INNSER/01.INICIO/in.png" width="30px" ></a>
+      <a href="https://www.youtube.com/@rosaalcantara973" target="_blank"><img src="Imagenes/WEB_INNSER/01.INICIO/yt.png"  width="30px"></a>
+    </div>
+  </div>
+</div>
+
+<div class="go-top-container">
+  <div class="go-top-button">
+    <i class="fa-solid fa-arrow-up"></i>
+  </div>
+</div>
+
+  <script src="https://cdn.lordicon.com/fudrjiwc.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({duration:2000});
+    </script>
+     <script src="formulario.js"></script>
+    <script type="text/javascript" src="./main.js"></script>
+    <script src="barra_lateral.js"></script>  
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/e013d55bb1.js" crossorigin="anonymous"></script>
+  </body>
+  </html>

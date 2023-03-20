@@ -1,0 +1,418 @@
+.nuestros_servicios{
+    margin-top: 50px;
+    width: 100%;
+    height: 700px;
+    background-image: url("Imagenes/WEB_INNSER/05.SERVICIOS/servicioportada.png");
+    background-size: cover;
+    display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	gap: 20px;
+}
+
+.servicios_caracol_tarjeta{
+    margin-top: 450px;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+
+.servicio_texto_card_caracol{
+    position: absolute;
+    width: 140px;
+    text-align: left;
+    font-size: 10px;
+    margin-left: 20px;
+    margin-top: 30px;
+}
+
+.servicio_texto_card_caracol a{
+    text-decoration: none;
+    color: #000;
+}
+
+
+
+.servicio-imagen_card_caracol{
+    
+    text-align: center;
+
+}
+
+.tallleres_de_emprendimiento_y_creatividad{
+    width: 100%;
+    height: 1400px;
+    background-color: #FEF4EB;
+}
+
+.texto_emprendimiento_creatividad{
+    padding: 20px;
+    width: 60%;
+    margin: 60px auto;
+    background-color: #ec812b;
+    font-size: 20px;
+    border: 2px solid #ec812b;
+    border-radius: 10PX;
+}
+
+.contenedor_videos_emprendimiento_creatividad{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 0 80px;
+	gap: 80px;
+    text-align: center;
+}
+
+.contenedor_videos_impacto_social{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0 80px;
+	gap: 80px;
+    text-align: center;
+}
+
+.contenedor_video_impacto_social video{
+    border: 2px solid #ec812b;
+    background-color: #fff;
+    border-radius: 10px;
+    z-index: 100;
+}
+
+
+.video_emprendimiento_creatividad{
+    background-color: #fff;
+    border-radius: 10px;
+    border: 2px solid #ec812b;
+    z-index: 100;
+}
+
+.video_emprendimiento_texto{
+    margin: 60px;
+    text-align: left;
+
+}
+
+.titulo_universidades_emprendimiento_creatividad{
+    margin: 50px 80px;
+    text-align: center;
+}
+
+.logos_universidades_emprendimiento_creatividad{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin: 20px 80px;
+    border: 2px solid #ec812b;
+}
+
+.logo_universidad_emprendimiento_creatividad{
+    text-align: center;
+    margin: auto;
+}
+
+.logo_universidad_emprendimiento_creatividad:hover{
+    transform: scale(1.1);
+}
+
+.caracol_imagen1{
+    position: absolute;
+    left: 21%;
+    top: 185%;
+}
+
+.caracol_imagen2{
+    position: absolute;
+    left: 45%;
+    top: 185%;
+}
+
+.caracol_imagen3{
+    position: absolute;
+    left: 69.3%;
+    top: 185%;
+}
+
+.caracol_imagen4{
+    position: absolute;
+    left: 93.5%;
+    top: 185%;
+}
+
+.caracol_imagen5{
+    position: absolute;
+    left: 94%;
+    top: 72%;
+}
+
+.caracol_imagen6{
+    position: absolute;
+    left: 24%;
+    top: 527%;
+}
+
+.caracol_imagen7{
+    position: absolute;
+    left: 55.5%;
+    top: 527%;
+}
+
+.caracol_imagen8{
+    position: absolute;
+    left: 87%;
+    top: 527%;
+}
+
+
+.innovación_empresarial_abierta{
+    width: 100%;
+    height: 1150px;
+    background-color: #fff;
+}
+
+.innovacion_social_impacto{
+    width: 100%;
+    height: 900px;
+    background-color: #FEF4EB;
+}
+
+.misiones_internacionales_de_innovacion{
+    width: 100%;
+    height: 700px;
+    background-color: #fff;
+}
+
+.challenge_span{
+    background-color:  #ec812b;
+    text-align: center;
+    width: 100%;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+.challenge_span2{
+    background-color:  #ec812b;
+    text-align: center;
+    width: 240px;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+.challenge_titulo{
+    text-align: center;
+    width: 100%;
+    font-weight: 600;
+}
+
+.challenge_titulo2{
+    text-align: center;
+    width: 240px;
+    font-weight: 600;
+}
+
+.contenido-tarjeta-innovacion{
+    height: 140px;
+    width: 240px;
+    text-align: justify;
+    border: 1px solid #f8d5bb;
+    border-radius: 10px;
+    padding: 5px;
+    background-color:  #f8d5bb;
+}
+
+.innovacion_empresariabla_abierta_descripcion{
+    width: 800px;
+    margin: 80px auto;
+    border:  2px solid #ec812b ;
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 20px;
+    background-color: #ec812b;
+}
+
+.titulo-principal-innovacion{
+    position: absolute;
+    margin-left: 80px;
+    margin-top: 80px;
+    font-size: 24px;
+}
+
+.contenedor-tarjeta-innovacion1{
+    position:absolute;
+    margin-left: 80px;
+    margin-top: 20%;
+}
+
+.contenedor-tarjeta-innovacion2{
+    position:absolute;
+    margin-left: 390px;
+    margin-top: 16%;
+}
+
+.contenedor-tarjeta-innovacion3{
+    position:absolute;
+    margin-left: 690px;
+    margin-top: 12%;
+}
+
+.contenedor-tarjeta-innovacion4{
+    position:absolute;
+    margin-left: 990px;
+    margin-top: 8%;
+}
+
+.contenedor-tarjeta-innovacion5{
+    position:absolute;
+    margin-left: 1290px;
+    margin-top: 4%;
+}
+
+.imagen-tarjeta-innovacion{
+    text-align: center;
+}
+
+.logo-innovacion{
+    position: absolute;
+    margin-left: 1200px;
+    margin-top: 42%;
+}
+
+.imagenes-acopladas-innovacion{
+    position: relative;
+    height: 190px;
+    width: 240px;
+}
+.numero-innovacion{
+    position: absolute;
+    margin-left: 20px;
+    z-index: 99;
+}
+
+.caracol-innovacion{
+    position: absolute;
+    margin-left: 20px;
+}
+
+.descripcion_innovacion_social_impacto{
+    width: 800px;
+    margin: 80px auto;
+    border:  2px solid #ec812b ;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #ec812b;
+    font-size: 20px;
+}
+
+.descripcion_misiones_internacionalles_de_innovacion{
+    width: 800px;
+    margin: 80px auto;
+    border:  2px solid #ec812b ;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #ec812b;
+    font-size: 20px;
+}
+
+
+/* ---- ----- ----- Contenedor Principal y Flechas ----- ----- ----- */
+.peliculas-recomendadas {
+	margin-bottom: 70px;
+}
+
+.peliculas-recomendadas .contenedor-principal {
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+
+.peliculas-recomendadas .contenedor-principal .flecha-izquierda,
+.peliculas-recomendadas .contenedor-principal .flecha-derecha {
+	position: absolute;
+	border: none;
+	background: rgba(0,0,0,0.3);
+	font-size: 40px;
+	height: 50%;
+	top: calc(50% - 25%);
+	line-height: 40px;
+	width: 50px;
+	color: #fff;
+	cursor: pointer;
+	z-index: 500;
+	transition: .2s ease all;
+}
+
+.peliculas-recomendadas .contenedor-principal .flecha-izquierda:hover,
+.peliculas-recomendadas .contenedor-principal .flecha-derecha:hover {
+	background: rgba(0,0,0, .9);
+}
+
+.peliculas-recomendadas .contenedor-principal .flecha-izquierda {
+	left: 0;
+}
+
+.peliculas-recomendadas .contenedor-principal .flecha-derecha {
+	right: 0;
+}
+
+/* ---- ----- ----- Carousel ----- ----- ----- */
+.peliculas-recomendadas .contenedor-carousel {
+	width: 100%;
+	padding: 20px 0;
+	overflow: hidden;
+	scroll-behavior: smooth;
+}
+
+.peliculas-recomendadas .contenedor-carousel .carousel {
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+.peliculas-recomendadas .contenedor-carousel .carousel .pelicula {
+	min-width: 20%;
+	transition: .3s ease all;
+	box-shadow: 5px 5px 10px rgba(0,0,0, .3);
+}
+
+.peliculas-recomendadas .contenedor-carousel .carousel .pelicula.hover {
+	transform: scale(1.2);
+	transform-origin: center;
+}
+
+.peliculas-recomendadas .contenedor-carousel .carousel .pelicula img {
+	width: 100%;
+	vertical-align: top;
+}
+
+/* ---- ----- ----- Media Queries ----- ----- ----- */
+@media screen and (max-width: 800px) {
+	header .logotipo {
+		margin-bottom: 10px;
+		font-size: 30px;
+	}
+
+	header .contenedor {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.pelicula-principal {
+		font-size: 14px;
+	}
+
+	.pelicula-principal .descripcion {
+		max-width: 100%;
+	}
+
+	.peliculas-recomendadas .contenedor-carousel {
+		overflow: visible;
+	}
+
+	.peliculas-recomendadas .contenedor-carousel .carousel {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 20px;
+	}
+
+	.peliculas-recomendadas .indicadores,
+	.peliculas-recomendadas .flecha-izquierda,
+	.peliculas-recomendadas .flecha-derecha {
+		display: none;
+	}
+}
